@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+  </nav>
+  <h1>Event Registration</h1>
+  <div id="eventSummary"></div>
+  <form id="regForm">
+    <label>Full Name <input type="text" id="userName" required></label>
+    <label>Email <input type="email" id="userEmail" required></label>
+    <label>Phone <input type="tel" id="userPhone" required></label>
+    <label>Number of Tickets <input type="number" id="numTickets" min="1" value="1" required></label>
+    <button type="submit">Finalise Registration</button>
+  </form>
+  <div id="msg"></div>
+  <script src="js/config.js"></script>
+  <script src="js/register.js"></script>
+</body>
+
+</html>

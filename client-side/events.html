@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Search Events</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+  </nav>
+  <h1>Search Events</h1>
+  <div>
+    <input id="searchInput" placeholder="Search by name...">
+    <select id="statusFilter">
+      <option value="">All Status</option>
+      <option>Active</option>
+      <option>Past</option>
+      <option>Suspended</option>
+    </select>
+    <button onclick="searchEvents()">Search</button>
+  </div>
+  <div id="results"></div>
+  <script src="js/config.js"></script>
+  <script src="js/events.js"></script>
+</body>
+
+</html>
